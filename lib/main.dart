@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_meditation_app/src/views/home_view.dart';
+import 'package:flutter_meditation_app/src/views/home/home_view.dart';
 
 void main() => runApp(MyApp());
 

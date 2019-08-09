@@ -22,7 +22,6 @@ class AppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 128,
-      height: 128,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
