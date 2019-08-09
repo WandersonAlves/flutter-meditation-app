@@ -19,7 +19,7 @@ class AppBanner extends StatelessWidget {
           personIcon,
           Expanded(
             child: new Text(
-              "Flutter's hot reload helps you quickly and easily experiment, build UIs, add features, and fix bugs faster. Experience sub-second reload times, without losing state, on emulators, simulators, and hardware for iOS and Android.",
+              "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.",
               style: TextStyle(color: Colors.white),
               textAlign: TextAlign.left,
             ),

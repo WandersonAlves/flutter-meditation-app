@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     ));
 
     return new MaterialApp(
-      title: 'Meditation APP',
+      title: 'Medi',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
         textTheme: Theme.of(context).textTheme.apply(
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white,
         )
       ),
-      home: new HomeView(),
+      home: HomeView(),
     );
   }
 }

@@ -27,7 +27,7 @@ class AppBottomNavigation extends StatelessWidget {
     return new Container(
       decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(color: Colors.white, width: 1.0)
+          top: BorderSide(color: Color(0xFF0e1e2b), width: 1.0)
         )
       ),
       child: bottomBar,

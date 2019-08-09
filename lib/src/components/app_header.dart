@@ -7,15 +7,31 @@ class AppHeader extends StatelessWidget {
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Icon(Icons.menu, color: Colors.white),
-          new Text(
-            "Relax, sit down",
+          Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () {},
+              customBorder: CircleBorder(),
+              splashColor: Colors.white.withOpacity(0.25),
+              child: Icon(Icons.menu, color: Colors.white),
+            ),
+          ),
+          Text(
+            "Medi",
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0),
           ),
-          Icon(Icons.favorite, color: Colors.white),
+          Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () {},
+              customBorder: CircleBorder(),
+              splashColor: Colors.red.withOpacity(0.75),
+              child: Icon(Icons.favorite, color: Colors.white),
+            )
+          )
         ],
       ),
     );
