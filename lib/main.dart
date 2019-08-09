@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_meditation_app/src/components/AppBottomNavigation.dart';
+import 'package:flutter_meditation_app/src/components/AppHeader.dart';
+import 'package:flutter_meditation_app/src/utils/AppColors.dart';
 import 'package:flutter_meditation_app/src/views/home/HomeView.dart';
 
 void main() => runApp(MyApp());
@@ -22,7 +25,20 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white,
         )
       ),
-      home: HomeView(),
+      home: Scaffold(
+        body: Container(
+          color: AppColors.primaryColor,
+          padding: EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              AppHeader(),
+              HomeView()
+            ],
+          )
+        ),
+        bottomNavigationBar: AppBottomNavigation(),
+      ),
     );
   }
 }
