@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_meditation_app/src/utils/AppColors.dart';
 
 class AppBanner extends StatelessWidget {
   final personIcon = new Container(
-    margin: new EdgeInsets.only(right: 10),
+    margin: EdgeInsets.only(right: 10),
     child: Icon(
       Icons.person,
-      color: Colors.red[300],
+      color: AppColors.accentColor,
       size: 48,
     ),
   );

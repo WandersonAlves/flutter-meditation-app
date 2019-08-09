@@ -2,12 +2,13 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_meditation_app/src/components/app_banner.dart';
-import 'package:flutter_meditation_app/src/components/app_bottom_navigation.dart';
-import 'package:flutter_meditation_app/src/components/app_header.dart';
-import 'package:flutter_meditation_app/src/components/app_image.dart';
+import 'package:flutter_meditation_app/src/components/AppBanner.dart';
+import 'package:flutter_meditation_app/src/components/AppBottomNavigation.dart';
+import 'package:flutter_meditation_app/src/components/AppHeader.dart';
+import 'package:flutter_meditation_app/src/components/AppImage.dart';
 import 'package:flutter_meditation_app/src/data/recommendedLeason.dart';
-import 'package:flutter_meditation_app/src/utils/utils.dart';
+import 'package:flutter_meditation_app/src/utils/AppColors.dart';
+import 'package:flutter_meditation_app/src/utils/Utils.dart';
 
 class HomeView extends StatelessWidget {
 
@@ -43,10 +44,10 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 40.0, left: 30.0, right: 30.0),
-        color: Color(0xFF0e1e2b),
-        child: new Column(
+        color: AppColors.primaryColor,
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: [
             AppHeader(),
             AppBanner(),
             SizedBox(height: 20),
@@ -57,7 +58,7 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: new AppBottomNavigation(),
+      bottomNavigationBar: AppBottomNavigation(),
     );
   }
 }
